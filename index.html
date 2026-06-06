@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimédia Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1a1a1a">
+</head>
+<body>
+
+    <header class="app-header">
+        <h1>Multimédia</h1>
+    </header>
+
+    <main class="app-content">
+        
+        <section id="home" class="page active">
+            <h2>Bem-vindo ao meu Guia</h2>
+            <p>Explorando o mundo através do design, vídeo e criatividade digital.</p>
+            <div class="card-destaque">
+                <h3>Último Projeto</h3>
+                <p>Veja o meu trabalho mais recente na aba de Portfólio!</p>
+            </div>
+        </section>
+
+        <section id="curso" class="page">
+            <h2>O Curso de Multimédia</h2>
+            <p>Áreas que estudamos e desenvolvemos:</p>
+            <div class="disciplina-card">🎬 Audiovisual & Edição</div>
+            <div class="disciplina-card">🎨 Design Gráfico & UI/UX</div>
+            <div class="disciplina-card">💻 Desenvolvimento Web</div>
+        </section>
+
+        <section id="portfolio" class="page">
+            <h2>O Meu Portfólio</h2>
+            <div class="grid-portfolio">
+                <div class="portfolio-item">
+                    <div class="placeholder-media">Design</div>
+                    <h4>Projeto Identidade Visual</h4>
+                </div>
+                <div class="portfolio-item">
+                    <div class="placeholder-media">Vídeo</div>
+                    <h4>Curta-Metragem Mód. 3</h4>
+                </div>
+            </div>
+        </section>
+
+        <section id="contactos" class="page">
+            <h2>Contactos</h2>
+            <p>Gostou do meu trabalho? Entre em contacto!</p>
+            <a href="mailto:seu-email@email.com" class="btn-contacto">Enviar E-mail</a>
+            <a href="#" class="btn-contacto secondary">LinkedIn</a>
+        </section>
+
+    </main>
+
+    <nav class="bottom-nav">
+        <button class="nav-btn active" onclick="mudarPagina('home')">🏠<span class="nav-text">Home</span></button>
+        <button class="nav-btn" onclick="mudarPagina('curso')">📚<span class="nav-text">Curso</span></button>
+        <button class="nav-btn" onclick="mudarPagina('portfolio')">💼<span class="nav-text">Portfólio</span></button>
+        <button class="nav-btn" onclick="mudarPagina('contactos')">📱<span class="nav-text">Contacto</span></button>
+    </nav>
+
+    <script>
+        // Função simples para alternar entre as secções
+        function mudarPagina(idPagina) {
+            // Esconde todas as páginas
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            // Remove o estado ativo dos botões
+            document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+            
+            // Mostra a página selecionada e ativa o botão correspondente
+            document.getElementById(idPagina).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+
+        // Registar o Service Worker para o PWA funcionar offline
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(() => console.log("PWA: Service Worker Registado!"))
+                .catch(err => console.log("Erro ao registar SW:", err));
+        }
+    </script>
+</body>
+</html>
