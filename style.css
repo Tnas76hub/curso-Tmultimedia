@@ -30,6 +30,7 @@ body {
 .app-header h1 {
     font-size: 1.2rem;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 /* Conteúdo e Páginas */
@@ -142,4 +143,12 @@ p {
 
 .nav-btn.active {
     color: #00adb5; /* Cor de destaque quando selecionado */
+}
+
+.media-portfolio {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* Recorta a imagem para caber perfeitamente no espaço */
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
