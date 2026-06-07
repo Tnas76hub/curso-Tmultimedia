@@ -11,7 +11,6 @@ self.addEventListener('fetch', (e) => {
 
 // Função para abrir a janela com a imagem
 function abrirModal() {
-    alert("O botão foi clicado com sucesso!");
     document.getElementById("meuModal").style.display = "block";
 }
 
