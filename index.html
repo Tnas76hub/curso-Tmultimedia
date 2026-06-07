@@ -11,44 +11,64 @@
 <body>
 
     <header class="app-header">
-        <h1>Multimédia</h1>
+        <h1>Curso Profissional - Técnico de Multimédia</h1>
     </header>
 
     <main class="app-content">
         
         <section id="home" class="page active">
-            <h2>Bem-vindo ao meu Guia</h2>
-            <p>Explorando o mundo através do design, vídeo e criatividade digital.</p>
+            <h2>Saiba mais sobre o curso!</h2>
+            <p>O curso profissional de Técnico de Multimédia da ESDICA te oferece muitas experiências e aprendizados, navegue na nossa APP e descubra mais!</p>
             <div class="card-destaque">
-                <h3>Último Projeto</h3>
-                <p>Veja o meu trabalho mais recente na aba de Portfólio!</p>
+                <h3>O que aprendemos?</h3>
+                <p>Na secção "Módulos", pode ver os módulos das disciplinas técnicas que temos e também ficar a saber o que aprendemos durante esses módulos! Veja mais em "Módulos"</p>
+            </div>
+             <div class="card-destaque">
+                <h3>Softwares Profissionais!</h3>
+                <p>Na secção "Softwares", saiba com que softwares aprendemos a trabalhar ao longo desses 3 anos de curso! Veja mais em "Softwares"</p>
+            </div>
+             <div class="card-destaque">
+                <h3>Site da ESDICA</h3>
+                <p>Na secção "Escola", tenha acesso direto ao site oficial da nossa escola, onde pode ver mais informações sobre o curso ou nossa escola! Veja mais em "Escola"</p>
             </div>
         </section>
 
-        <section id="curso" class="page">
-            <h2>O Curso de Multimédia</h2>
+        <section id="módulos" class="page">
+            <h2>Módulos técnicos de Multimédia</h2>
             <p>Áreas que estudamos e desenvolvemos:</p>
-            <div class="disciplina-card">🎬 Audiovisual & Edição</div>
-            <div class="disciplina-card">🎨 Design Gráfico & UI/UX</div>
-            <div class="disciplina-card">💻 Desenvolvimento Web</div>
+            <div class="disciplina-card">🗂️ Edição de bitmap</div>
+            <div class="disciplina-card">🖌️ Edição vetorial</div>
+            <div class="disciplina-card">⛹️ Animação 2D</div>
+            <div class="disciplina-card">🕹️ Animação interativa</div>
+            <div class="disciplina-card">🔲 Modelagem 3D</div>
+            <div class="disciplina-card">🎞️ Edição de vídeo</div>
+            <div class="disciplina-card">🌐 Edição web</div>
+            <div class="disciplina-card">🎧 Edição de som</div>
+            <div class="disciplina-card">🎙️ Pós produção de som</div>
+            <div class="disciplina-card">🎬 Pós produção de vídeo</div>
+            <div class="disciplina-card">🖼️ Design de Multimédia</div>
+            <div class="disciplina-card">🗣️ Comunicação interpessoal e institucional</div>
+            <div class="disciplina-card">🖥️ Arquitetura de Informação</div>
+            <div class="disciplina-card">👁️ Comunicação Visual</div>
+            <div class="disciplina-card">✅ E muito mais!</div>
         </section>
 
-        <section id="portfolio" class="page">
-            <h2>O Meu Portfólio</h2>
+        <section id="softwares" class="page">
+            <h2>Softwares Profissionais</h2>
             <div class="grid-portfolio">
                 <div class="portfolio-item">
-                    <div class="placeholder-media">Design</div>
-                    <h4>Projeto Identidade Visual</h4>
+                    <img src="assets/images/pacote-adobe.png" alt="Softwares da Adobe" class="media-portfolio">
+                    <h4>A escola disponibiliza todo o pacote da Adobe nas salas dos cursos profissionais, nós permitindo aprender para estarmos aptos a esses softwares no mercado de trabalho.</h4>
                 </div>
                 <div class="portfolio-item">
-                    <div class="placeholder-media">Vídeo</div>
-                    <h4>Curta-Metragem Mód. 3</h4>
+                    <img src="assets/images/softwares.png" alt="Softwares Gratuitos" class="media-portfolio">
+                    <h4>Também aprendemos a trabalhar em alguns softwares/sites gratuitos para a realização de alguns trabalhos durante o curso.</h4>
                 </div>
             </div>
         </section>
 
-        <section id="contactos" class="page">
-            <h2>Contactos</h2>
+        <section id="escola" class="page">
+            <h2>Escola</h2>
             <p>Gostou do meu trabalho? Entre em contacto!</p>
             <a href="mailto:seu-email@email.com" class="btn-contacto">Enviar E-mail</a>
             <a href="#" class="btn-contacto secondary">LinkedIn</a>
@@ -58,9 +78,9 @@
 
     <nav class="bottom-nav">
         <button class="nav-btn active" onclick="mudarPagina('home')">🏠<span class="nav-text">Home</span></button>
-        <button class="nav-btn" onclick="mudarPagina('curso')">📚<span class="nav-text">Curso</span></button>
-        <button class="nav-btn" onclick="mudarPagina('portfolio')">💼<span class="nav-text">Portfólio</span></button>
-        <button class="nav-btn" onclick="mudarPagina('contactos')">📱<span class="nav-text">Contacto</span></button>
+        <button class="nav-btn" onclick="mudarPagina('módulos')">📚<span class="nav-text">Módulos</span></button>
+        <button class="nav-btn" onclick="mudarPagina('softwares')">💻<span class="nav-text">Softwares</span></button>
+        <button class="nav-btn" onclick="mudarPagina('escola')">🏫<span class="nav-text">Escola</span></button>
     </nav>
 
     <script>
