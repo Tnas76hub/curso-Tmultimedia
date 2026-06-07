@@ -102,11 +102,9 @@
             event.currentTarget.classList.add('active');
         }
 
-        // Registar o Service Worker para o PWA funcionar offline
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('sw.js')
-                .then(() => console.log("PWA: Service Worker Registado!"))
-                .catch(err => console.log("Erro ao registar SW:", err));
+            .then(() => console.log("App pronta para uso!"));
         }
     </script>
 </body>
