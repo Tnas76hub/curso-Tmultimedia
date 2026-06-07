@@ -8,3 +8,13 @@ self.addEventListener('fetch', (e) => {
   // Para este projeto base, apenas deixamos o tráfego passar
   e.respondWith(fetch(e.request));
 });
+
+// Função para abrir a janela com a imagem
+function abrirModal() {
+    document.getElementById("meuModal").style.display = "block";
+}
+
+// Função para fechar a janela da imagem
+function fecharModal() {
+    document.getElementById("meuModal").style.display = "none";
+}
