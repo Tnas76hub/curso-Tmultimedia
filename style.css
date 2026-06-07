@@ -91,7 +91,7 @@ p {
 }
 
 /* Botões de Contacto */
-.btn-contacto {
+.btn-escola {
     display: block;
     width: 100%;
     padding: 12px;
@@ -104,9 +104,54 @@ p {
     font-weight: bold;
 }
 
-.btn-contacto.secondary {
+.btn-escola.site {
     background-color: #333;
     border: 1px solid #444;
+}
+
+/* O Modal (fundo escuro atrás da imagem) */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    z-index: 200; /* Fica à frente do menu e do cabeçalho */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo preto com transparência */
+    padding-top: 100px;
+}
+
+/* A Imagem dentro do Modal */
+.conteudo-modal {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 400px; /* Tamanho máximo ideal para ecrã de telemóvel */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* O Botão de Fechar (X) */
+.fechar-modal {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.fechar-modal:hover {
+    color: #00adb5; /* Muda de cor ao passar o rato/tocar */
 }
 
 /* Menu de Navegação Inferior */
