@@ -91,14 +91,14 @@
     </nav>
 
     <script>
-       // 1. Função para alternar entre as secções/páginas da App
+
 function mudarPagina(idPagina) {
-    // Esconde todas as páginas
+  
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    // Remove o estado ativo de todos os botões da barra de navegação
+ 
     document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
     
-    // Mostra a página selecionada e ativa o botão correspondente
+
     const paginaAlvo = document.getElementById(idPagina);
     if (paginaAlvo) {
         paginaAlvo.classList.add('active');
@@ -108,7 +108,7 @@ function mudarPagina(idPagina) {
     }
 }
 
-// 2. Função para abrir a janela com a imagem (Modal)
+
 function abrirModal() {
     const modal = document.getElementById("meuModal");
     if (modal) {
@@ -118,16 +118,16 @@ function abrirModal() {
     }
 }
 
-// 3. Função para fechar a janela da imagem (Modal)
+
 function fecharModal() {
     const modal = document.getElementById("meuModal");
     if (modal) {
-        modal.style.none = "none"; // Correção para esconder
+        modal.style.none = "none"; 
         modal.style.display = "none";
     }
 }
 
-// 4. Registar o Service Worker para o PWA funcionar offline
+
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js')
         .then(() => console.log("PWA: Service Worker Registado!"))
