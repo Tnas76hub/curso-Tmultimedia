@@ -8,11 +8,11 @@
 body {
     background-color: #121212;
     color: #ffffff;
-    padding-top: 60px; /* Espaço para o cabeçalho */
-    padding-bottom: 80px; /* Espaço para o menu inferior */
+    padding-top: 60px; 
+    padding-bottom: 80px; 
 }
 
-/* Cabeçalho */
+
 .app-header {
     position: fixed;
     top: 0;
@@ -33,17 +33,17 @@ body {
     text-align: center;
 }
 
-/* Conteúdo e Páginas */
+
 .app-content {
     padding: 20px;
 }
 
 .page {
-    display: none; /* Esconde todas as páginas por padrão */
+    display: none; 
 }
 
 .page.active {
-    display: block; /* Só mostra a página que tiver a classe 'active' */
+    display: block; 
     animation: fadeIn 0.3s ease-in-out;
 }
 
@@ -64,7 +64,7 @@ p {
     margin-bottom: 20px;
 }
 
-/* Elementos Visuais (Cards) */
+
 .card-destaque, .disciplina-card, .portfolio-item {
     background-color: #1e1e1e;
     border-radius: 12px;
@@ -90,7 +90,7 @@ p {
     color: #888;
 }
 
-/* Botões de Contacto */
+
 .btn-escola {
     display: block;
     width: 100%;
@@ -118,25 +118,25 @@ p {
     font-weight: bold;
 }
 
-/* O Modal (fundo escuro atrás da imagem) */
+
 .modal {
-    display: none; /* Escondido por padrão */
+    display: none; 
     position: fixed;
-    z-index: 200; /* Fica à frente do menu e do cabeçalho */
+    z-index: 200; 
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Fundo preto com transparência */
+    background-color: rgba(0, 0, 0, 0.9); 
     padding-top: 100px;
 }
 
-/* A Imagem dentro do Modal */
+
 .conteudo-modal {
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 400px; /* Tamanho máximo ideal para ecrã de telemóvel */
+    max-width: 400px; 
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     animation: zoomIn 0.3s ease;
@@ -147,7 +147,7 @@ p {
     to { transform: scale(1); opacity: 1; }
 }
 
-/* O Botão de Fechar (X) */
+
 .fechar-modal {
     position: absolute;
     top: 30px;
@@ -160,10 +160,10 @@ p {
 }
 
 .fechar-modal:hover {
-    color: #00adb5; /* Muda de cor ao passar o rato/tocar */
+    color: #00adb5; 
 }
 
-/* Menu de Navegação Inferior */
+
 .bottom-nav {
     position: fixed;
     bottom: 0;
@@ -196,13 +196,13 @@ p {
 }
 
 .nav-btn.active {
-    color: #00adb5; /* Cor de destaque quando selecionado */
+    color: #00adb5; 
 }
 
 .media-portfolio {
     width: 100%;
     height: 180px;
-    object-fit: cover; /* Recorta a imagem para caber perfeitamente no espaço */
+    object-fit: cover; 
     border-radius: 8px;
     margin-bottom: 10px;
 }
